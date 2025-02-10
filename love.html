@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Love Coded Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(0, 0, 0);
+            font-family: "Sans-serif", monospace; 
+        }
+
+        #text {
+            font-size: 12px; 
+            line-height: 14px; 
+            background: url("heart.jpg") no-repeat center;
+            background-size: contain;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            word-wrap: break-word;
+            white-space: normal; 
+            width: 95vw; 
+            height: 95vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; 
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text"></p>
+
+    <script>
+        let str = "mahal kita palangga ta ka ayayaten ka namnamaen ka pakawan taka laylaydek sik a inaru taka ginhigugma tika pinalangga ta ka kaluguran daka guina higugma ta ka nahigugma ko nimo padangga ta ka giyugma ta ka inuyat taka naeayog ko ni mo kaguraan taka ginatamyaw ta ka naayog ako kanimo ginhigugma ta ikaw naayog ko ikaw guina palangga ta ka naalang-alang ta ikaw gina higugma ta ikaw pagkamahal ko sa imo padungog ko ikaw guina ugma ta ikaw pagkamahal ko kanimo kaluyagan da ka inaru ka inuyatan ka guina panga ta ikaw kalangkapan ta ikaw ";
+
+        document.getElementById("text").innerText = str.repeat(200); 
+    </script>
+</body>
+</html>
